@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div id="alert"></div>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+          alt=""
+        />
+        <h2>Yapılacaklar Listesi</h2>
+
+        <div class="input-group mb-3" id="ekle">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Bugün ne yapacaksın?"
+            id="plan"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="ekle_buton"
+            onclick="ekleButonu()"
+          >
+            Ekle
+          </button>
+        </div>
+      </div>
+      <ul id="list" class="list-group">
+        <li class="list-group-item" id="list-item">
+          <span>3 litre su ic</span>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            id="closeButton"
+            onclick="reset()"
+          ></button>
+        </li>
+        <li class="list-group-item" id="list-item">
+          <span>Odevlerini yap</span>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            id="closeButton"
+            onclick="reset()"
+          ></button>
+        </li>
+        <li class="list-group-item" id="list-item">
+          <span>En az 3 saat kodlama yap</span>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            id="closeButton"
+            onclick="reset()"
+          ></button>
+        </li>
+
+        <li class="list-group-item" id="list-item">
+          <span>Yemek yap</span>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+            id="closeButton"
+            onclick="reset()"
+          ></button>
+        </li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

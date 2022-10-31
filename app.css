@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+.header {
+  padding: 20px;
+  background-color: #f18408;
+}
+.header img {
+  margin: 4px;
+  background-color: aliceblue;
+}
+.header h2 {
+  color: aliceblue;
+  margin-bottom: 2px;
+}
+#ekle button {
+  width: 200px;
+  background-color: #d8d8e8;
+  color: aliceblue;
+  border: none;
+}
+#ekle button:hover {
+  color: rgba(0, 0, 0, 0.421);
+}
+li {
+  list-style: none;
+  text-align: justify;
+}
+
+.btn-close {
+  float: right;
+}
+.btn-close:hover {
+  background-color: #f18408;
+  transition: 150ms all;
+}
+
+.text-dec {
+  text-decoration: line-through;
+  background-color: #24626b;
+}
